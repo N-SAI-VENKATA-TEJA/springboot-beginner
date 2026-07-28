@@ -40,5 +40,8 @@ function randomUser() {
       userName.innerHTML =
         data.results[0].name.first + "" + data.results[0].name.second;
       userGender.innerHTML = data.results[0].gender;
+    })
+    .error(function (err) {
+      console.log("err");
     });
 }
